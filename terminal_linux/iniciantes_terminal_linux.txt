@@ -1,0 +1,124 @@
+# COMANDOS TERMINAL LINUX
+
+
+- cd    = Changed Directory
+
+- ..    = Um diretorio acima, ou um nivel acima do diretorio atual
+
+- ~     = Diretorio HOME do usuario
+
+- -     = Retorna para o ultimo diretorio onde estavamos
+
+- cp    = CoPy (cp <arqu.extensao> <arq.copiado.extensao>)
+
+- cp -r = Copiar diretorio recursivamente
+
+- rm    = ReMove
+
+- rmdir = ReMover DIRetorio vazio
+
+- rm -i = Remove com interacao, vai perguntar se tem certeza se quer apagar
+
+- rm -r = Remove diretorio e todo o seu conteudo
+
+- mkdir = Meke Directory
+
+- mkdir -p   = Cria diretorios com diretorios parentes
+
+- find  = procurar
+
+- .     = referencia o proprio diretorio da acao
+
+- file  = arquivo
+
+- cat   = conCATnate
+
+- grep  = Buscas em arquivos de textos
+
+- man   = manual do comando a ser usado (man [comando])
+
+- less	= Le um arquivo sem precisar edita-lo. Para sair, aperte 'q'
+
+- cut   = usado para selecionar itens de uma coluna em um arquivo
+
+- cut -d   = Delimitador (cut -d ','  #nesse exemplo o delimitador é a virgula)
+
+- cut -f   = Field, seleciona somente os campos necessários do comando cut (cut -d ',' -f '1,3' <arquivo.extensao>
+
+- sed -e   = Imprime o resultado solicitado na tela
+
+- sed -i   = Imprime e modifica o resultado do comando no arquivo
+
+	--- COMANDOS SED ---
+	- sed -e '/^$/d' <arquivo.txt>
+	- -e = mostra sem modificar o arquivo
+	- '//' = o espaço dedicado ao comando ('') e delimitadores dos parametros (//)
+	- '//d' = deleta a linha inteira
+	- ^ = seleciona a partir do inicio
+	- $ = seleciona até o final
+	- 's///' = substitui o primeiro parametro pelo segundo parametro, uma vez em cada linha
+
+- vim	= editor de texto melhorado do "vi"
+
+	--- COMANDOS COMUNS ---
+	- i = para inserir texto no doc
+	- esc = para sair da inserção de texto e voltar para o modo "leitura"
+	- *por padrão, o "vim" trabalha no modo "leitura"
+	- dd = apaga uma linha inteira
+	- : = modo comando
+	- :w = salva o arquivo
+	- :q = sair da edição
+	- :q! = forçando sair sem salvar
+	- :syntax on = adiciona cores em arquivos de código 
+	- :set number = adiciona número das linhas na lateral do programa
+	- yy = copia a linha inteira
+
+- ctrl+l   = limpa o buffer do terminal
+
+- ctrl+c   = interrompe a execução da tarefa atual no terminal
+
+- ls	= mostra o conteúdo do diretório atual
+
+- ls -l   = mostra o conteúdo e as permissões do diretório atual
+
+	--- LISTA DE SIGLAS DE PERMISSÕES ---
+	- d = diretório
+	- - = arquivo normal
+	- l = link simbólico
+	- c = arquivo especial
+	- b = arquivo de bloco
+	- s = socket
+	- r = readable (pode ser lido) = 4
+	- w = writeble (pode ser escrito) = 2
+	- x = executable (pode ser executado) = 1
+
+# Dois tipos de gerenciadores de pacotes
+
+- Baixo nivel: Resolve a parte burocratica do pacote
+	- Instalar o pacote
+	- Atualizar
+	- Remover e criar o pacote
+	
+	--- GERENCIADORES DE BAIXO NIVEL ---
+	- dpkg
+	- rpm
+	- pkgtools
+	- etc
+
+- Alto nivel: É a parte inteligente do gerenciador
+	- Resolve dependencias 
+	- Procura no repositorio
+	- atualizar a lista de repo
+	
+	--- GERENCIADORES DE ALTO NIVEL ---
+	- apt
+	- apt-get
+	- slackpkg
+	- yum*|dnf
+	- etc
+
+	*em processo de descontinuacao
+
+---
+
+
